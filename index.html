@@ -4,136 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <script src="script.js" defer></script>
     <title>49ers Fan Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<style>
-    .navigation {
-        overflow: auto;
-        background-color: rgb(170,0,0);
-        border: solid rgb(173, 153, 93);
-        width: 100%;
-    }
-    .navigation a {
-        color: white;
-        text-align: center;
-        padding: 13px;
-        text-decoration: none;
-        float: left;
-        width: 12.125%;
-    }
-    #dalogo{
-        width: 100px;
-        height: 46px;
-        border-radius: 50%;
-        overflow: hidden;
-        margin-top: 5px;
-    }
-    .navigation a.active{
-        background-color: rgb(173, 153, 93);
-    }
-    .grid-outline{
-        display: grid;
-        background-color: rgb(170,0,0);
-        padding: 1px;
-        gap: 10px;
-        grid-template-columns: 300px 300px 300px;
-        grid-template-rows: 350px 350px 350px 350px; 
-    }
-    .grid-box{
-        background-color: rgb(173, 153, 93);
-        text-align: center;
-        color: white;
-        font-size: 20px;
-    }
-    .box1{
-        grid-column: 1/ span 3;
-        grid-row: 1/ span 2;
-    }
-    .box2{
-        grid-column: 4;
-        grid-row: 1/span 1;
-    }
-    .box3{
-        grid-column: 4;
-        grid-row: 2;
-    }
-    .box5 {
-        grid-column: 1/ span 3;
-        grid-row: 4 ;
-    }
-    .box7 {
-        grid-column: 2/ 5;
-        grid-row: 3;
-    }
-    #niners-video{
-        width: 100%;
-        height: 100%;
-    }
-    #helmet{
-        width: 180px;
-        height: 180px; 
-    }
-    #jerry{
-        height: 320px;
-        align-self: center;
-        border: black solid 1px;
-        margin-top: 15px;
-    }
-    #kittle{
-        width: 220px;
-        height: 320px;
-        margin-top: 15px;
-    }
-    #pennat{
-        width: 100%;
-        height: 100%;
-    }
-    #to{
-        width: 100%;
-        height: 100%;
-    }
-</style>
 <body>
-    <div class="navigation">
-            <a href="index.html" class="active">Home</a>
-            <a href="super-bowl-victories.html"> Super Bowl Victories </a>
-            <a href="famous-49ers.html"> Famous Players </a>
-            <a href="seasons.html"> Previous Seasons </a>
-            <a href="predictions.html"> Predictions </a>
-            <a href="contact-me.html"> Contact Us</a>
-            <a href="sitemap.html"> Sitemap </a>
+    <nav class="navigation-bar">
+        <div class="brand-title"> Brand Name</div>
+        <a href="#" class="button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="nav-links"> 
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="superbowl-victories.html"> Super Bowl Victories </a></li>
+                <li><a href=""> Name </a></li>
+            </ul>
+        </div>
+    </nav>
+ 
+    <img src="images/49erslogo.png" class="webpage-banner">
+    <div class="wrappper">
+        <article class="img-info">
+            <h2> add text here </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec risus leo. Vestibulum congue scelerisque mi, at efficitur odio rutrum vitae. Aenean sed quam ut felis pulvinar hendrerit sit amet vitae ante. Curabitur iaculis, nibh eleifend sollicitudin cursus, arcu dolor sollicitudin libero, faucibus aliquet felis ligula non eros. Sed nec feugiat diam. Suspendisse ornare blandit tincidunt. Vestibulum vel risus a neque gravida posuere vel vitae risus. Nullam a porta velit. Morbi tempus sapien risus, ac vulputate metus ultrices vel. Vestibulum ultrices elit at nibh sodales sodales. Quisque consequat, velit sit amet dictum elementum, mi mauris facilisis erat, et pretium justo orci vestibulum diam. Etiam vitae sollicitudin eros. Etiam posuere magna ut est vehicula tempus. Quisque mi sapien, fermentum iaculis efficitur a, fringilla at mi. Proin sagittis augue nec interdum egestas. Maecenas et dapibus urna.
+            </p>
+            <p>
+                Mauris blandit velit at elementum finibus. Duis tortor massa, egestas id est eu, euismod laoreet urna. Sed vitae sem eu felis egestas pretium ac sit amet lorem. Vestibulum varius, orci sit amet elementum bibendum, diam libero mattis risus, ut ornare ante elit ut eros. Donec eleifend iaculis ex, et venenatis purus. Nullam commodo nisi in risus interdum consequat sit amet sed eros. Vestibulum ultricies justo a dignissim gravida. Duis auctor a enim eu rutrum. Aenean vitae feugiat justo. Nullam pulvinar mauris est, nec vehicula purus congue sed. 
+            </p>
+        </article>
     </div>
-
-<div class="grid-outline">
-    <div class="grid-box box1"> 
-    <iframe id="niners-video"
-     src=https://youtube.com/embed/1S5KVr8Vz44>
-    </iframe>
-    </div>
-    <div class="grid-box box2" id="description"> 
-        Welcome to the San Francisco 49ers Fan Page!
-        This is the perfect place to be to have relevant information about the the current team as well its history. 
-        If you want to explore more of the page, make sure to follow the navigation bar.
-        Hope you enjoy!
-            <img src="https://i.pinimg.com/originals/1c/3e/f8/1c3ef85d33176e88349a0d9db5d9901c.png" id="helmet">
-    </div>
-    <div class="grid-box box3"> 
-            <img src="https://cconnect.s3.amazonaws.com/wp-content/uploads/2013/05/1986-Topps-Jerry-Rice-RC.jpg" id="jerry">
-    </div>
-    <div class="grid-box box4"> 
-            <img src="https://sportscardinvestor.s3.amazonaws.com/prod/1659_297_25-L" id="kittle"> 
-    </div>
-    <div class="grid-box box5"> 
-           <img src="https://i0.wp.com/feltfootball.com/wp-content/uploads/2021/02/49ers-SB-XVI_Fotophire.png?w=1260" id="pennat">
-    </div>
-    <div class="grid-box box6"> 
-           <img src="https://i.ebayimg.com/images/g/LgEAAOSwUohiqRnZ/s-l500.jpg" id="to">  
-    </div>
-    <div class="grid-box box7"> 
-        The purpose of this website is to demonstrate my passion for the San Francisco 49ers and what they have represented for me as a person but also as a fan.
-        My goal with this website is to expand my knowledge about the organization but as well as build a foundation in which fans with similar interst can come and gather information whenever they seem fit too.
-        I want to spread the joy that I get from watching this team play year in and year out. 
-    </div>
-</div>
 </body>
 </html>
