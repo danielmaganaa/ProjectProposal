@@ -5,6 +5,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #c9243f;
 }
 
 .navigation-bar {
@@ -55,7 +56,7 @@ body {
 .button .bar {
     height: 3px;
     width: 100%;
-    background-color: lightslategrey;
+    background-color: #c8aa76;
 }
 
 @media (max-width: 600px){
@@ -85,31 +86,86 @@ body {
         display: flex;
     }
 }
-
-.wrapper {
-    width: 100%;
+.homepage{
+    height: 500vh;
+    display: flex;
+}
+.hometitle{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color: whitesmoke;
+    padding-left: 25px;
+    text-align: center;
+}
+.pages-home {
+    width:50%
 }
 
-.webpage-banner {
-    width: 100%;
+.pages-home div{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
-
-.img-info {
-    width: 100%
-}
-
-img-info h2 {
-    padding: 30px 30px 20px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 48px;
-    color: black;
-    line-height: 40px;
-}
-
-img-info p {
-    padding: 0px 30px 20px;
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
+.pages-home div> p{
+    width: 80%;
     font-size: 18px;
-    line-height: 16px;
+    line-height: 30px;
+    padding-top: 20px;
+}
+.pages-home div> img{
+    width: 50%;
+    padding-top: 75px;
+}
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    background-color: #c8aa76;
+}
+
+#sbv-img-trophies{
+    width: 70%;
+}
+
+comment-box {
+    top: 50%;
+    left: 50%;
+    position:absolute;
+    transform: translate(-50%,-50%);
+    width: 500px;
+}
+
+.comment-box h2{
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin: 25px;
+}
+
+.comment-box input {
+    width: 50%;
+    height: 50px;
+    padding: 0 20px;
+    margin: 25x;
+    border-radius: 5px;
+    border: 2px solid #c8aa76;
+}
+comment-box input:focus {
+    border: 1px solid whitesmoke;
+    outline: 0;
+}
+.comment-box textarea {
+    width: 50%;
+    height: 150px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid #c8aa76;
 }
